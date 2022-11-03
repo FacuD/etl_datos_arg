@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "datos-arg-poetry"
+version = "0.1.0"
+description = ""
+authors = ["FacuD"]
+readme = "README.md"
+packages = [{include = "datos_arg_poetry"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+python-decouple = "^3.6"
+pathlib = "^1.0.1"
+SQLAlchemy = "^1.4.41"
+pandas = "^1.5.0"
+click8 = "^8.0.1"
+requests = "^2.28.1"
+psycopg2-binary = "^2.9.3"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.8.0"
+pdbpp = "^0.10.3"
+ipykernel = "^6.15.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
